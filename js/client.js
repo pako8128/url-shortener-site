@@ -21,7 +21,10 @@ url_form.addEventListener('submit', (event) => {
 		body: JSON.stringify(req),
 	})
 	.then(resp => resp.json())
-	.then(data => stub.textContent = "https://short-urls-test.herokuapp.com/" + data.stub);
+	.then(data => {
+		stub.textContent = "https://short-urls-test.herokuapp.com/" + data.stub;
+		stub.setAttribute('href', "https://short-urls-test.herokuapp.com/" + data.stub);
+	});
 
 	stub_div.removeAttribute('hidden');
 });
