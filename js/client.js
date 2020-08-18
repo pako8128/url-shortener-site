@@ -21,7 +21,7 @@ url_form.addEventListener('submit', (event) => {
 		body: JSON.stringify(req),
 	})
 	.then(resp => resp.json())
-	.then(data => stub.setAttribute('value', data.stub));
+	.then(data => stub.setAttribute('value', "https://short-urls-test.herokuapp.com/" + data.stub));
 
 	stub_div.removeAttribute('hidden');
 });
