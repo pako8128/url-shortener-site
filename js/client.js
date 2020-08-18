@@ -7,11 +7,13 @@ stub_div.setAttribute('hidden', true);
 url_form.addEventListener('submit', (event) => {
 	event.preventDefault();
 
+	const formdata = new FormData(url_form);
+		
 	const req = {
-		url: url_form.url,
+		url: formdata.get('url'),
 	};
 
-	fetch('http://short-url-test.herokuapp.com/api/shorten', {
+	fetch('https://short-urls-test.herokuapp.com/api/shorten', {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
