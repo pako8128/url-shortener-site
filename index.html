@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Short-URL</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+	<main class="container mt-5 text-center">
+		<h1>Short URL</h1>
+
+		<div class="container mt-5">
+			<form id="url-form">
+				<div class="form-group input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text">URL</span>
+					</div>
+					<input type="url" name="url" class="form-control" placeholder="https://example.com" required>
+				</div>
+			</form>
+		</div>
+		<div id="stub-div" class="container mt-5">
+			<div class="row">
+				<div class="col"></div>
+				<div class="col">
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text">LINK</span>
+						</div>
+						<input id="stub" type="url" readonly>
+					</div>
+				</div>
+				<div class="col"></div>
+			</div>
+		</div>
+	</main>
+</body>
+
+</html>
