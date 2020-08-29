@@ -1,6 +1,6 @@
 const stub_div = document.querySelector('#stub-div');
 const stub  = document.querySelector('#stub');
-const url_form = document.querySelector('#url-form');
+const url_form = document.querySelector('form');
 
 stub_div.setAttribute('hidden', true);
 
