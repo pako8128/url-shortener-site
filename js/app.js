@@ -1,8 +1,8 @@
-const stub_div = document.querySelector('#stub-div');
-const stub  = document.querySelector('#stub');
+const stub_div = document.querySelector('.short-url-wrapper');
+const stub  = document.querySelector('.short-url');
 const url_form = document.querySelector('form');
 
-stub_div.setAttribute('hidden', true);
+stub_div.style.display = "none";
 
 url_form.addEventListener('submit', (event) => {
 	event.preventDefault();
@@ -26,5 +26,6 @@ url_form.addEventListener('submit', (event) => {
 		stub.setAttribute('href', "https://short-urls-test.herokuapp.com/" + data.stub);
 	});
 
-	stub_div.removeAttribute('hidden');
+	stub_div.style.display = "flex";
+	stub_div.style.animation = "fadeIn";
 });

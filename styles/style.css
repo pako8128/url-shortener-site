@@ -69,3 +69,29 @@ form input:valid + .label-url::after {
 	color: blue;
 }
 
+/* short url show */
+
+.short-url-wrapper {
+	margin-top: 70px;
+	padding: 10px 10px;
+	display: flex;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: darkgrey 10px 10px 4px 0px;
+}
+
+.short-url {
+	text-decoration: none;
+	padding: 0px 10px;
+}
+
+@keyframes fadeIn {
+	from {
+		transform: translateY(-100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0%);
+		opacity: 1;
+	}
+}
